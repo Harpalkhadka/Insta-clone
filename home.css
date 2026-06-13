@@ -1,0 +1,225 @@
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+/*background black ani words white vayo*/
+body {
+  background-color: #000;
+  color: white;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 230px;
+  background-color: #111;
+  padding: 20px;
+}
+
+/*just mero harlink ko naam ko */
+.sidebar h2 {
+  margin-bottom: 25px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+
+/*tei icon ra text */
+.sidebar li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 8px 0;
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+/*sidebar ko kunai ma chuyo vane red color ma hover hune */
+.sidebar li:hover {
+  background-color: #222;
+  color: #e1306c;
+}
+
+/* icon style  */
+.material-symbols-outlined {
+  vertical-align: middle;
+  font-size: 22px;
+  transition: 0.3s;
+  color: #fff;
+}
+
+/* post ra story  */
+.main {
+  flex: 1;
+  padding: 20px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Stories */
+.stories {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+  width: 470px;
+}
+
+
+/*story glow garene aaba yesma glowing circle vayese image thapam 4 5 otai color */
+.story {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  padding: 3px;
+  background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+}
+
+
+/*just parent follow garya ho story image aaru kei haina */
+.story img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #000;
+}
+
+/* Feed / Posts */
+.feed {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 470px;
+}
+
+.post {
+  background-color: #111;
+  border-radius: 10px;
+  padding: 15px;
+  width: 100%;
+}
+
+/* Profile picture main feed ko  */
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Post Image */
+.post-image {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 15px 0;
+}
+
+.post-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Post Actions */
+.post-actions {
+  display: flex;
+  gap: 15px;
+  font-size: 22px;
+}
+
+.post-actions .material-symbols-outlined:hover {
+  color: #e1306c;
+  transform: scale(1.2);
+}
+
+/* Right Sidebar */
+.suggestions {
+  width: 270px;
+  background-color: #111;
+  padding: 20px;
+  overflow-y: auto;
+}
+/*heading nai ho suggestion vaneko*/
+.suggestions h3 {
+  margin-bottom: 20px;
+  color: #e1306c;
+}
+/*profile ko lie*/
+.sug-user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.sug-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #444;
+  margin-right: 10px;
+}
+
+.sug-user p {
+  font-size: 14px;
+}
+/*follows vanne wala ko color */
+.sug-user .light {
+  color: gray;
+  font-size: 12px;
+}
+/*right side ma va follow button*/
+.sug-user button {
+  background-color: transparent;
+  color: #0095f6;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.sug-user button:hover {
+  color: #007acc;
+}
+/* Suggestions profile pictures */
+.sug-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.sug-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}

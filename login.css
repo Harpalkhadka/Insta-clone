@@ -1,0 +1,104 @@
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a1b0b6;
+    font-family: Arial, sans-serif;
+}
+/*whole box vitra ko content*/
+.a {
+    width: 350px;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    background-color: #cfdfe5;
+    text-align: center;
+}
+    
+h1 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.b {
+    margin-top: 20px;
+    text-align: left; /*aligns hanyo container ma  */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+    text-transform: capitalize;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box; 
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #5d9de1;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #4672a2;
+}
+
+.c {
+    margin-top: 25px;
+    font-size: 14px;
+    color: #777;
+}
+
+.c a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.c a:hover {
+    color: #02060b;
+    text-decoration: underline;
+}
+
+
+/*just naam ko style change */
+.momo-signature-regular {
+  font-family: "Momo Signature", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+footer {
+    position: fixed;       /* jaile bottom ma basxa fixed xa ne taaaaaaa ,jhau lagyo */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #9baab0;
+    color: #333;
+    font-size: 14px;
+    border-top: 1px solid #aaa;
+}
